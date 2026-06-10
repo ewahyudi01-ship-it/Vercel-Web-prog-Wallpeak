@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dashboard | Wallpeak</title>
+</head>
+
+<body class=" bg-[rgb(15,17,17)]">
+
+    <div id="navBar"
+        class="fixed inset-x-0 items-center flex flex-row px-10 py-5 bg-black/20 backdrop-blur-md font-bold backdrop-filter justify-between lg:justify-center top-0 gap-7 lg:gap-10 md:gap-3 text-white text-center text-sm md:text-[14px] lg:text-[16px] md:text-xs z-50">
+
+        <li class="nav-item rounded-2xl bg-green-200 p-1 px-3 text-black"><a class="nav-link" href="index.html">Main
+                menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#storePage">Store</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutUs.html">About us</a></li>
+        <li class="nav-item rounded-2xl bg-red-500 text-white p-1 px-3 hover:bg-red-600 transition"><a class="nav-link"
+                href="">Log Out</a></li>
+
+    </div>
+
+    <!-- balok/menu utama -->
+    <div class="relative flex flex-col rounded-2xl mx-30 pt-50 max-w-full gap-5">
+
+        <!-- baris pertama -->
+        <div class="flex flex-row gap-5">
+            <div class=" bg-[rgb(33,37,41)] rounded-xl max-w-fit px-5 py-8 flex flex-row items-center gap-3">
+                <p class="text-[16px] font-bold text-white">Total sold</p>
+                <div class="bg-[rgb(0,132,255)] px-3 py-2 rounded-xl max-w-fit h-auto">
+                    <div class="text-white font-bold text-sm">23</div>'
+
+                </div>
+            </div>
+            <!-- kolom kedua -->
+            <div class=" bg-[rgb(33,37,41)] rounded-xl max-w-fit px-5 py-8 flex flex-row items-center gap-3">
+                <p class="text-[16px] font-bold text-white">Your balance </p>
+                <div class="bg-[rgb(79,165,79)] px-3 py-2 rounded-xl max-w-fit h-auto">
+                    <div class="text-white font-bold text-sm">'Rp. 23000</div>
+
+                </div>
+            </div>
+            <!-- kolom ketiga -->
+            <div class=" bg-[rgb(33,37,41)] rounded-xl max-w-fit px-5 py-8 flex flex-row items-center gap-3">
+                <p class="text-[16px] font-bold text-white">Total wallpapers created</p>
+                <div class="bg-[rgb(242,125,0)] px-3 py-2 rounded-xl max-w-fit h-auto">
+                    <div class="text-white font-bold text-sm">36</div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- baris kedua -->
+        <a href="">
+            <div class="flex flex-row gap-5">
+                <div class=" bg-[rgb(33,37,41)] rounded-xl max-w-fit px-5 py-8 flex flex-row items-center gap-3">
+
+                    <p class="text-[16px] font-bold text-white">Create new wallpaper!</p>
+                    <div class="bg-[rgb(115,79,225)] px-3 py-2 rounded-xl max-w-fit h-auto">
+                        <p class="font-bold text-[15px] text-white">+</p>
+                    </div>
+                </div>
+        </a>
+    </div>
+
+    <!-- tunjukin semua wallpaper dari database -->
+    <div class="relative flex flex-wrap max-w-fit gap-4">
+
+        <div class="bg-[rgb(45,47,47)] p-3 rounded-xl">
+            <div class="overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1QgKMd5UIYfqgxZi35PdvEhWUUvML6tYz"
+                    class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+            </div>
+
+
+            <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1vwdlyuU1J5veJDOvzdI_Y7lfis8K_hRR" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1OdoWqLi64fNEpgz1AF4TJGLGvgeW1SAl" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/15FGTaeau9PwbxL_67uHMs8_k6p6nglYi" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1X7Xhv9jNvw_1T6ea1uiqGr6gpF7y_JIH" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1Lhh-FwL1HGmYuJxrUKS6BKdy1MLJyhrE" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1XA4mMwtHk5z3948sXtgydjbD_W9m8Khy" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1alY4dqTx-EvqD_1bV9asLwKDV9-mwk49" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1ye5PoixESwxuEQbehR7DWx2F6E4Omn0P" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1aZ3IMhnzcGLlo-qqxvrs-Q35e2_t5DcB" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1hVo_LZReWcI12OmOeVRAUt07ubpq_IMi" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1RrcTphHC30zm1VLnfnyc04mXD0FEd7fh" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1H7uw-2p8xk3NqhQBWq9iEXGgfIRKEOif" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/14dWu3QYheepkDXvKtbjea5FN67Spz8sL" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1eX7-FQtkynveYxVoqCZx14qSxmvra7sN" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1KcKOn5ERUSumfb1stkr56jHT6JjdIf3n" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+         <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1exdsgAFc7P902EHOwkR7FrYJETjQ14Or" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+         <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1DHurBvmVHer0s7iW7_UIy4uWSxD0bEA3" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+         <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1LFBGWzQas4yksnP755bQmDgVoZIrHiLS" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+         <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1ZfJ8j4F8GYSn1h6GxIZgnP2thX8F2VR9" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/18Yq1g0ikpXMOIm0b02V1zbJyX9jeJ1a_" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1TtmWvvubzH357l2zOXI404JuhsKtvpG1" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+        
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1rfMxeB82Q3jCNCREduiheos55T6XiJq1" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1rQi7rm1Udd1tAjN5m38PiU9ySb3JSRef" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1pkxKWQlTaQYH2uWvJOpnjW_0RkK6XdSH" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1lf2u-OQ3w-Ec8cO6131vdh6XnyDUMsvn" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1jhNieyAGtt4iLtcyUngSAjSU1B8-Rahr" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1fBE58FNE6AE5z4DNV5mDm2EZMt-NeypJ" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1b3VjgiNHiJz8E5xNbCDWia_muM7S90lL" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1_kslm9QGcWKsPx3GOK2Qq3vpkI2_1J0_" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1PoyyMXIRueZLhyvBjxEkgl0DRVdrXHd5" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1PO95HI9wzeOBm0CaLEsjj96kqKQXzcBR" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1LJgjzHb4T3EVfNj99bhtZyRyP0BxYnNm" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1G30YZxykkc9f8YtN8C20zTSZNkMFOIoa" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/1FPoMfF1jRzbvVnu_gVdLy5wDR1Npwp6b" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+        <div class=" bg-[rgb(45,47,47)] p-3 rounded-xl overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300">
+            <img src="https://lh3.googleusercontent.com/d/14sZKyeC2x-XNSmFgFfsn46-KSFXh_8Ww" class="w-auto h-[100px] md:h-[200px] lg:h-[250px] object-cover rounded lg:rounded-2xl">
+        <a href="" onclick="return confirm('Delete wallpaper?')"
+                class="bg-red-400 text-xs font-bold text-white px-3 py-2 rounded-xl gap-2">
+                Delete
+            </a>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
