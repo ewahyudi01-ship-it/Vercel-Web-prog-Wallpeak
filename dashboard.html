@@ -63,6 +63,24 @@
                     </div>
                 </div>
         </a>
+
+        <div class=" bg-[rgb(33,37,41)] rounded-xl max-w-fit px-5 py-8 flex flex-row items-center gap-3">
+            
+        <form action="topup.php" method="POST">
+        <input type="number"
+           name="amount"
+           placeholder="Top Up Amount"
+           required
+           class="w-full px-4 py-3 bg-[#2a2c4e]/60 border border-white/10 rounded-xl text-white">
+
+            <button type="submit"
+            name="submit_topup" onclick="return confirm('Are you sure want topup?')"
+            class="bg-[rgb(115,79,225)] px-3 py-2 rounded-xl text-white font-bold">
+            Top Up
+            </button>
+        </form>
+
+            </div>
     </div>
 
     <!-- tunjukin semua wallpaper dari database -->
